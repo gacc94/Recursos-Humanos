@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="code/css/login.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="account">
+          <div class="account-slider">
+              <img src="assets/img/portada-3.jpg" alt="" />
+          </div>
+          <div class="account-container">
+            <div class="account-form">
+                <div class="account-title">
+                    <h1 class="account-h1">Recursos Humanos</h1>
+                    <p class="account-p">Ingresar al Sistema</p>
+                </div>
+                <form action="" class="form">
+                    <div class="form-field">
+                        <label for="" class="form-label">Usuario</label>
+                        <input type="text" class="form-input" placeholder="Ingresa el Usuario"/>
+                    </div>
+                    <div class="form-field">
+                        <label for="" class="form-label">Contraseña</label>
+                        <input type="text" class="form-input" placeholder="Ingresa la Contraseña"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" class="form-chekbox" />
+                        <span for="" class="form-span">Recordarme</span>
+                    </div>
+                    <div class="form-button">
+                        <button class="form-btn" type="submit">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      
+      const array = ['Pedro','Carlos','Juan']
+
+      const filterName = (array,max)=>{
+        result = []
+
+        for (const name of array) {
+          if(name.length < max){
+            result.push(name)
+          }
+        }
+        return result;
+      }
+
+      console.log(filterName(array,5));
+
+    </script>
+    
+  </body>
+</html>
